@@ -1,0 +1,368 @@
+/** Estilos del footer */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(238, 172, 223);
+}
+.logotipo1 {
+  text-align: center;
+}
+.logotipo1 img{ 
+  margin-top: 20px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.mb-8 input, textarea, text{
+  margin-left: 10%;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+
+.mb-8 label{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.titulopagina {
+  color: rgb(238, 172, 223);
+  font-weight: bold;
+  text-align: center;
+  font-style: oblique;
+}
+
+.titulopagina:hover {
+  
+  font-size: 311%; 
+  transition: all 0.3s ease;
+}
+.col-3 .card {
+  
+  margin-bottom: 20px; 
+  border-radius: 10px;
+}
+.card {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.col-3 .card-img-top {
+  width:90%;
+  margin: 10px; 
+  border-radius: 10px;
+}
+
+.col-3 .card-body {
+  text-align: center;
+  min-height: 150px;
+}
+
+.col-3 .card-title,
+.col-3 .card-text,
+.col-3 .list-group-item {
+  font-style: oblique;
+  border-radius: 10px;
+  min-height: 20px;
+  line-height: 1.5; 
+}
+
+.col-3 .list-group-item { 
+  color: rgb(232, 107, 203); 
+  font-weight: bold;
+  text-align: center;
+  font-style: oblique;
+}
+
+.card-body2 {
+  min-height: 65px;
+  padding: 15px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.btn {
+  
+  margin: 10px;
+  width: 150px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: rgb(246, 241, 245); 
+  padding: 10px 20px;
+  cursor: pointer; 
+  transition: all 0.3s ease; 
+}
+
+.btn a {
+  font-style: oblique;
+  text-decoration: none;
+  color: black;
+}
+
+
+.btn:hover {
+  background-color: rgb(238, 172, 223);
+  font-size: 111%; 
+}
+
+/**/
+.form-control {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  margin-bottom: 10px;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.form-label {
+  display: block;
+  text-align: center;
+  font-size: medium;
+  font: bolder;
+  font-style: italic;
+  color: rgb(232, 107, 203); 
+}
+
+/**/
+
+.footer {
+  border-radius: 10px;
+  background: linear-gradient(to right, #843bce, #e15886);
+  min-height: fit-content;
+  
+}
+
+
+
+.first {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.first2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.first h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.first h4::after {
+  content: '';
+  background: #66c83d;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 80%;
+}
+
+
+.first ul li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.first a,
+.first2 a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.first a:hover,
+.first2 a:hover {
+  color: #fff;
+  transition: 0.2s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+  text-decoration: none
+}
+
+
+.second {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.second2 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.second h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+.second h4::after {
+  content: '';
+  background: #66c83d;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+}
+
+
+.second li {
+  list-style: none;
+  padding-bottom: 30px;
+}
+
+.second a,
+.second2 a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.second a:hover,
+.second2 a:hover {
+  color: #fff;
+  transition: 0.2s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+  text-decoration: none
+}
+
+
+
+.third {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  color: rgb(206, 206, 206);
+  font-family: 'Poppins', sans-serif;
+  text-align: right;
+}
+
+
+.third h4 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 1.6em;
+  color: #fff;
+  padding-bottom: 0.5em;
+}
+
+
+.third h4::after {
+  content: '';
+  background: #66c83d;
+  width: 20%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+}
+
+
+
+.third li {
+  list-style: none;
+  padding-bottom: 15px;
+}
+
+
+.third a {
+  color: rgb(206, 206, 206);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+
+.third a:hover {
+  color: #fff;
+  transition: 0.2s;
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 1);
+}
+
+
+@media screen and (max-width:1000px) {
+  .first {
+    text-align: center;
+  }
+
+  .first h4::after {
+    left: 40%;
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .third {
+    text-align: center;
+  }
+
+  .third h4::after {
+    left: 40% !important;
+  }
+}
+
+.margin {
+  margin-left: 20px;
+}
+
+.line {
+  height: 2px;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
