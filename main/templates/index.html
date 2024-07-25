@@ -1,11 +1,28 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class="row">
+  <h1 class="titulopagina">Nuestra Historia</h1>
+  <div class="texto col-md-6 col-sm-10">
+    <p>
+      Bienvenidos a <strong>Pastelería Onlyflans</strong>, un lugar donde cada postre cuenta una historia. 
+      Nuestra aventura comenzó hace más de 15 años, cuando nuestra pasión por la pasteleria y el deseo de compartir con el mundo nuestros productos nos embarcaron en este delicioso viaje. Desde entonces, hemos mantenido viva esa tradición, creando dulces que no solo 
+      deleitan el paladar, sino que también tocan el corazón.
+    </p>
+    <p>
+      Cada pastel que sale de nuestro horno está hecho con los mejores ingredientes y una pizca de amor. Nos enorgullece ser parte 
+      de sus celebraciones y momentos especiales. ¡Ven y descubre por qué nuestros clientes dicen que nuestros pasteles son 
+      verdaderas obras de arte!
+    </p>
+  </div>
+  <div class="imagen-historia col-md-6 col-sm-10">
+    <img src="https://img.freepik.com/fotos-premium/chefs-reposteria-dos-hombres-trabajando-juntos-haciendo-pasteles-pasteleria_56854-2184.jpg" alt="Pastelería Dulce Sueño">
+  </div>
+</div>
   <h1 class="titulopagina">Lista de Pasteles</h1>
   <div class="row">
     {% for producto in productos %}
-      <div class="col-3">
+      <div class="col-md-3 col-sm-6">
         <div class="card">
           <img src="{{ producto.imagen_url }}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -23,6 +40,18 @@
         </div>
       </div>
     {% endfor %}
-    
-  </div>
+
+    <div class="row">
+      <h1 class="titulopagina">Encuentranos</h1>
+      <div class="map-container" style="width: 100%; display: flex; justify-content: center; padding: 40px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4311.17043227666!2d-71.24891419539628!3d-32.880841757027774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd8fecd724c7%3A0xefe20583632b9e90!2sQuillota%2C%20Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1721703529609!5m2!1ses-419!2scl" 
+              allowfullscreen="" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              loading="lazy">
+          </iframe>
+        </div>     
+    </div>
+ 
 {% endblock %}

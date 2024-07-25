@@ -12,22 +12,36 @@
           <a class="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/presupuesto">Nuestros Productos</a>
+          <a class="nav-link" href="/flanes">Nuestros Productos</a>
         </li>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/welcome">welcome</a>
       </li>
     </li>
+    {% if user.is_authenticated%}
     <li class="nav-item">
-      <a class="nav-link" href="/about">About...</a>
+      <a class="nav-link" href="/presupuesto">Presupuesto</a>
     </li>
+    {% endif %}
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Busque acá...">
-        <button class="btn" type="submit">Busqueda</button>
+      <div class="d-flex" role="search">
+        {% if user.is_authenticated %}
+        <span class="d-inline-block m-1 text-dark-emphasis">
+          Bienvenido {{user.username}}
+        </span>
+        <form action="{% url 'logout'%}" method="post">
+          {% csrf_token %}
+        <button type="submit" class="btn">LOGOUT</button>
       </form>
+      {% else %}
+      <span class="d-inline-block m-1 text-dark-emphasis">
+        Ingrese a su cuenta {{user.username}}
+      </span>
+        <a href="/accounts/login" class="btn">LOGIN</a>
+        {% endif %}
+      </div>
     </div>
   </div>
 </nav>
-<div class="logotipo1"><img src="/static/css/img/onlyflans_logo.png" alt=""></div>
+<div class="logotipo1"><img src="/static/css/img/onlyflans_logo.png" alt="" class="img-fluid mx-auto d-block"></div>

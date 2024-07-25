@@ -31,8 +31,28 @@
   max-width: 80%;
 }
 
+.mb-12 text, input{
+  margin-left: 10%;
+  margin-right: auto;
+  max-width: 80%;
+}
+
+.d-flex span, input {
+  color: rgb(232, 107, 203); 
+  font-weight: bold;
+  text-align: center;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+
+}
 
 .mb-8 label{
+  color: rgb(232, 107, 203); 
+  font-weight: bold;
+  text-align: center;
+  font-style: oblique;
   display: flex;
   justify-content: center;
   align-items: center; 
@@ -78,7 +98,7 @@
 
 .col-3 .card-title,
 .col-3 .card-text,
-.col-3 .list-group-item {
+.col-md-3 ,.col-sm-6 ,.list-group-item {
   font-style: oblique;
   border-radius: 10px;
   min-height: 20px;
@@ -123,7 +143,7 @@
 }
 
 /**/
-.form-control {
+.form-control, .username, .password {
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0,0,0,0.15);
   padding: 10px;
@@ -142,6 +162,21 @@
   color: rgb(232, 107, 203); 
 }
 
+/*Historia pasteleria*/
+
+.texto {
+  flex: 1;
+  padding-right: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.imagen-historia {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+/**/
 /**/
 
 .footer {
@@ -341,7 +376,7 @@
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:800px) {
   .third {
     text-align: center;
   }
@@ -366,3 +401,5 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
+/* Maps */
